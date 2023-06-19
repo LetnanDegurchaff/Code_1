@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -13,7 +11,7 @@ public class Player : MonoBehaviour
     private Vector3 _forward = new Vector3(0, 0, 1);
     private Vector3 _back = new Vector3(0, 0, -1);
     private Vector3 _leftR = new Vector3(0, -1, 0);
-    private Vector3 _rightR = new Vector3(0, 1, 0 );
+    private Vector3 _rightR = new Vector3(0, 1, 0);
 
     private float _start = 1;
     private float _end = 1000;

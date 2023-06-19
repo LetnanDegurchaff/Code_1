@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\UnityTechnologies\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+    <Compile Include="Assets\AlarmHouse.cs" />
     <Compile Include="Assets\FinishTrigger.cs" />
     <Compile Include="Assets\ColorSetter.cs" />
     <Compile Include="Assets\UnityTechnologies\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
@@ -68,7 +69,6 @@
     <Compile Include="Assets\Player.cs" />
     <Compile Include="Assets\Trigger.cs" />
     <Compile Include="Assets\UnityTechnologies\EffectExamples\Shared\Scripts\GunAim.cs" />
-    <Compile Include="Assets\AlarmHouse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\UnityTechnologies\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
