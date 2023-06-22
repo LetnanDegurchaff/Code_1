@@ -8,7 +8,7 @@ public class Detector : MonoBehaviour
     {
         if (other.TryGetComponent<Player>(out Player player))
         {
-            _alarm.TurnOnAlarm();
+            _alarm.TurnOn();
         }
     }
 
@@ -16,7 +16,7 @@ public class Detector : MonoBehaviour
     {
         if (other.TryGetComponent<Player>(out Player player))
         {
-            _alarm.TurnOffAlarm();
+            _alarm.TurnOff();
         }
     }
 }

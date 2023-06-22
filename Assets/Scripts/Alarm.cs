@@ -11,11 +11,11 @@ public class Alarm : MonoBehaviour
 
     private Coroutine _alarmChanging;
 
-    public void TurnOnAlarm()
+    public void TurnOn()
     {
         if (_alarmChanging != null)
         {
-            StopCoroutine(_alarmChanging);
+            StopCoroutine(_alarmChanging); 
         }
 
         if (_audioSource.volume == 0)
@@ -24,7 +24,7 @@ public class Alarm : MonoBehaviour
         _alarmChanging = StartCoroutine(ChangingVolume(_maxAlarmVolume));
     }
 
-    public void TurnOffAlarm()
+    public void TurnOff()
     {
         StopCoroutine(_alarmChanging);
         _alarmChanging = StartCoroutine(ChangingVolume(_minAlarmVolume));
