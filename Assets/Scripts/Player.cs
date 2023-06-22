@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Transform _transform;
     [SerializeField] private float _speed;
     [SerializeField] private int _speedR;
+
+    private Transform _transform;
 
     private Vector3 _left = new Vector3(-1, 0, 0);
     private Vector3 _right = new Vector3(1, 0, 0);
