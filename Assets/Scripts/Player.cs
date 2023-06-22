@@ -21,10 +21,6 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        //Debug.Log(_current);
-
-        //_current = Mathf.MoveTowards(_start, _end, _maxSpeed);
-
         if (Input.GetKey(KeyCode.A))
         {
             _transform.Translate(_left * Time.deltaTime * _speed);
