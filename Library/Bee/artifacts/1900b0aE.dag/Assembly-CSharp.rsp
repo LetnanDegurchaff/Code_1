@@ -348,19 +348,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/AlarmHouse.cs"
 "Assets/ColorSetter.cs"
 "Assets/FinishTrigger.cs"
-"Assets/Player.cs"
+"Assets/Scripts/Alarm.cs"
+"Assets/Scripts/Detector.cs"
+"Assets/Scripts/Player.cs"
 "Assets/Trigger.cs"
-"Assets/UnityTechnologies/EffectExamples/Shared/Scripts/DecalDestroyer.cs"
-"Assets/UnityTechnologies/EffectExamples/Shared/Scripts/ExtinguishableFire.cs"
-"Assets/UnityTechnologies/EffectExamples/Shared/Scripts/GunAim.cs"
-"Assets/UnityTechnologies/EffectExamples/Shared/Scripts/GunShoot.cs"
-"Assets/UnityTechnologies/EffectExamples/Shared/Scripts/ParticleCollision.cs"
-"Assets/UnityTechnologies/EffectExamples/Shared/Scripts/ParticleExamples.cs"
-"Assets/UnityTechnologies/EffectExamples/Shared/Scripts/ParticleMenu.cs"
-"Assets/UnityTechnologies/EffectExamples/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 
 /deterministic
