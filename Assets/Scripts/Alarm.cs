@@ -18,36 +18,38 @@ public class Alarm : MonoBehaviour
             StopCoroutine(_alarmChanging); 
         }
 
-        if (_audioSource.volume == 0)
-            _audioSource.Play();
-
-        _alarmChanging = StartCoroutine(ChangingVolume(_maxAlarmVolume));
+        _alarmChanging = StartCoroutine
+            (ChangingVolume(_maxAlarmVolume));
     }
 
     public void TurnOff()
     {
         StopCoroutine(_alarmChanging);
-        _alarmChanging = StartCoroutine(ChangingVolume(_minAlarmVolume));
+
+        _alarmChanging = StartCoroutine
+            (ChangingVolume(_minAlarmVolume));
     }
 
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
-        _audioSource.volume = 0f;
     }
 
     private IEnumerator ChangingVolume(float targetVolume)
     {
+        if (_audioSource.volume == _minAlarmVolume)
+            _audioSource.Play();
+
         while (_audioSource.volume != targetVolume)
         {
-            _audioSource.volume = Mathf.MoveTowards(
-            _audioSource.volume, targetVolume,
-            _turningSpeed * Time.deltaTime);
+            _audioSource.volume = Mathf.MoveTowards
+                (_audioSource.volume, targetVolume,
+                _turningSpeed * Time.deltaTime);
 
             yield return null;
         }
 
-        if (_audioSource.volume == 0)
+        if (_audioSource.volume == _minAlarmVolume)
             _audioSource.Stop();
     }
 }

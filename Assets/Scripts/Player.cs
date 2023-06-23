@@ -9,32 +9,38 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(-Vector3.right * Time.deltaTime * _speed);
+            transform.Translate
+                (-Vector3.right * Time.deltaTime * _speed);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(Vector3.right * Time.deltaTime * _speed);
+            transform.Translate
+                (Vector3.right * Time.deltaTime * _speed);
         }
 
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Translate(Vector3.forward * Time.deltaTime * _speed);
+            transform.Translate
+                (Vector3.forward * Time.deltaTime * _speed);
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Translate(-Vector3.forward * Time.deltaTime * _speed);
+            transform.Translate
+                (-Vector3.forward * Time.deltaTime * _speed);
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Rotate(-Vector3.up * Time.deltaTime * _speedR);
+            transform.Rotate
+                (-Vector3.up * Time.deltaTime * _speedR);
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Rotate(Vector3.up * Time.deltaTime * _speedR);
+            transform.Rotate
+                (Vector3.up * Time.deltaTime * _speedR);
         }
     }
 }
